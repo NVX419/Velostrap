@@ -1,0 +1,42 @@
+/* تأثيرات النيون */
+.neon-glow {
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, inset 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.neon-button {
+  @apply relative inline-block px-8 py-3 font-bold text-black bg-green-400 border-2 border-green-400 rounded-lg transition-all duration-300 hover:shadow-lg;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6), inset 0 0 20px rgba(0, 255, 0, 0.3);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.8), inset 0 0 30px rgba(0, 255, 0, 0.5), 0 0 50px rgba(0, 255, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+/* الصورة المربعة */
+.hero-image-square {
+  @apply w-32 h-32 rounded-lg overflow-hidden border-2 border-green-400 shadow-lg;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+/* الحركات */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* الخط الديكوري */
+.divider-line {
+  @apply h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
